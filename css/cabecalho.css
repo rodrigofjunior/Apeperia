@@ -1,0 +1,68 @@
+.cabecalho{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    width: 100%;
+}
+
+.cabecalho__logo{
+    margin-bottom: 1rem;
+}
+
+.cabecalho__nav{
+    text-align: center;
+}
+
+.cabecalho__itens{
+    display: inline-block;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.cabecalho__item{
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cabecalho{
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+
+    .cabecalho__item{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cabecalho{
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+
+    .cabecalho__item{
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+a.cabecalho__item:hover{
+    text-decoration: underline;
+    -webkit-transition: all 0.10s ease-in;
+    -moz-transition: all 0.10s ease-in;
+    -o-transition: all 0.10s ease-in;
+    -ms-transition: all 0.10s ease-in;
+    transition: all 0.10s ease-in;
+}

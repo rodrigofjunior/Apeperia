@@ -1,0 +1,145 @@
+.planos{
+    background-color: var(--cinza-claro);
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.planos__titulo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--cinza-escuro);
+    font-family: var(--montserrat);
+}
+
+.planos__cartoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planos__cartao{
+    background-color: white;
+    box-shadow: 5px 5px 5px var(--cinza-medio);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+.cartao__titulo{
+    text-align: center;
+    border-bottom: 1px solid var(--cinza-medio);
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.40rem;
+    font-weight: 700;
+    font-family: var(--montserrat);
+}
+
+.cartao__titulo-start{
+    color: var(--planos-cartao-start);
+}
+
+.cartao__titulo-ultra{
+    color: var(--planos-cartao-ultra);
+}
+
+.cartao__titulo-mega{
+    color: var(--planos-cartao-mega);
+}
+
+.cartao__conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao__valor{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--montserrat);
+}
+
+.cartao__valor-start{
+    color: var(--planos-cartao-start);
+}
+
+.cartao__valor-ultra{
+    color: var(--planos-cartao-ultra);
+}
+
+.cartao__valor-mega{
+    color: var(--planos-cartao-mega);
+}
+
+.cartao__texto{
+    margin: 0.75rem 2rem 0.75rem 2rem;
+    font-family: var(--montserrat);
+}
+
+.cartao__simbolo{
+    box-sizing: border-box;
+    color: var(--cinza-escuro);
+    margin-right: 0.5rem;
+}
+
+.cartao__botao{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 150px;
+    align-self: center;
+    padding: 1.25rem 0;
+}
+
+.cartao__botao-start{
+    border-color: var(--planos-cartao-start);
+    color: var(--planos-cartao-start);
+}
+
+.cartao__botao-ultra{
+    border-color: var(--planos-cartao-ultra);
+    color: var(--planos-cartao-ultra);
+}
+
+.cartao__botao-mega{
+    border-color: var(--planos-cartao-mega);
+    color: var(--planos-cartao-mega);
+}
+
+@media screen and (min-width: 1024px) {
+    .planos__cartoes{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .planos__cartao{
+        margin: 0 1rem;
+    }
+}
+
+a.cartao__botao-start:hover{
+    color: white;
+    font-weight: 500;
+    background-color: var(--planos-cartao-start);
+    transition: .1s ease-in;
+}
+
+a.cartao__botao-ultra:hover{
+    color: white;
+    font-weight: 500;
+    background-color: var(--planos-cartao-ultra);
+    transition: .1s ease-in;
+}
+
+a.cartao__botao-mega:hover{
+    color: white;
+    font-weight: 500;
+    background-color: var(--planos-cartao-mega);
+    transition: .1s ease-in;
+}

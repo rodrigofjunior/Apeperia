@@ -55,8 +55,8 @@
         flex-direction: row;
         align-items: center;
         align-content: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .rodape__itens{
@@ -69,10 +69,12 @@
 
     .rodape__icones{
         margin-bottom: 0rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .rodape__imagem{
-        margin-bottom: 0rem;
+        margin-bottom: 0.5rem;
     }
 
 }

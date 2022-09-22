@@ -6,6 +6,7 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 100%;
+    font-size: 1.1rem;
 }
 
 .rodape__imagem{
@@ -39,10 +40,41 @@
 
 @media screen and (min-width: 1024px) {
     .rodape{
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+    .rodape{
         flex-direction: row;
         align-items: center;
+        align-content: center;
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
+
+    .rodape__itens{
+        flex-wrap: nowrap;
+    }
+
+    .rodape__item{
+        line-height: 0rem;
+    }
+
+    .rodape__icones{
+        margin-bottom: 0rem;
+    }
+
+    .rodape__imagem{
+        margin-bottom: 0rem;
+    }
+
 }
 
 .rodape__item:hover{
